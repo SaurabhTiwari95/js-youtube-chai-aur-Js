@@ -17,14 +17,16 @@ let state
 
 /*---------------------------------- Data Types in Js ----------------------------------------------*/ 
 // Below are the primitive datatypes
+
 /*
     number => 2 to power of 53
     bigInt
     string => ""
     boolean => true/false
-    null
+    null // it also acts as a standalone value in js
     symbol => unique
  */
+
 // Below are the non-primitive datatypes
 /*
     Objects
