@@ -10,10 +10,6 @@ let score = "saurabh"
 // "33abc" => NaN
 // true => 1; false => 0
 
-
-
-
-
 // console.log(typeof score);
 // console.log(typeof(score));
 
@@ -38,4 +34,11 @@ let isLoggedIn = ""
 
 let booleanIsLoggedIn = Boolean(isLoggedIn)
 
-console.log(typeof booleanIsLoggedIn)
+// console.log(typeof booleanIsLoggedIn)
+
+let someNumber = 33
+
+let stringNumber = String(someNumber);
+
+console.log(someNumber)
+console.log(typeof(someNumber))
