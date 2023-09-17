@@ -27,7 +27,7 @@ let userEmail;
 
 const id = Symbol('123');
 const anotherId = Symbol('123');
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
 
 
@@ -38,18 +38,18 @@ let myObj = {
 }
 
 const myFunction = function(){
-    console.log("Hello World");
+    // console.log("Hello World");
 }
 
 // how to determine the dataType of a variable
 
-console.log(typeof score);
-console.log(typeof scoreValue);
-console.log(typeof isLoggedIn);
-console.log(typeof outsideTemp);
-console.log(typeof userEmail);
-console.log(typeof id);
-console.log(typeof myFunction);
+// console.log(typeof score);
+// console.log(typeof scoreValue);
+// console.log(typeof isLoggedIn);
+// console.log(typeof outsideTemp);
+// console.log(typeof userEmail);
+// console.log(typeof id);
+// console.log(typeof myFunction);
 /*
 
 https://tc39.es/ecma262/#sec-typeof-operator
@@ -73,3 +73,43 @@ https://tc39.es/ecma262/#sec-typeof-operator
     13. If val has a [[Call]] internal slot, return "function".
     14. Return "object".
 */
+
+/*------------------------------------------------------------------------*/
+
+/*---------------------------Stack and Heap Memory in JavaScript-----------------------*/ 
+
+/*
+    There are tqo types of memories in javaScript
+
+    1.Stack(Used on all Primitive dataTypes)
+        When Stack Memory is used then we work on the copy of the variable
+        which means whatever we are changing, will only change the copy value and 
+        not the original value (This can also be referred as call by Value)
+    2. Heap (Used on all Non-Primitive dataTypes)
+        When Heap Memory is used then we work on reference of the original value, so if we are working on the 
+        heap memory then the original value will be changed (This can also refered as call by reference)
+*/ 
+
+let myPrimitiveVariable = "Stack"
+let anotherPrimitiveVariable = myPrimitiveVariable
+anotherPrimitiveVariable = "newPrimitiveVariable"
+console.log("anotherPrimitiveVariable => "+ anotherPrimitiveVariable)
+console.log("myPrimitiveVariable => "+ myPrimitiveVariable)
+
+let user1 ={
+    email : "user@google.com",
+    upi : "485738497@upi"
+}
+
+console.log(user1)
+
+let user2 = user1;
+
+user2.email = "newEmail@google.com"
+console.log(user2)
+console.log(user1)
+/*
+    on line 109 & 110 the values will be changed for user email 
+    but it isn't changed on line 104 because Js executes the code line by line and we are 
+    printing the value before changing the value
+*/ 
