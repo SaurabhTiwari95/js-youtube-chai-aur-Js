@@ -38,6 +38,4 @@ console.log("Month => "+newDate1.getDay());
 // `${newDate.getDay()} and the time`
 
 newDate1.toLocaleString('default',{
-    weekday:"long",
-timeZone:"",}
-)
+    weekday : "long",})
