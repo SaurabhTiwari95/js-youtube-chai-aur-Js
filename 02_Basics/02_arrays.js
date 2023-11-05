@@ -11,7 +11,7 @@ const dc_heroes = ["superman","flash","batman"]
 
 const allHeroes = marvel_heroes.concat(dc_heroes);
 
-console.log(allHeroes);
+// console.log(allHeroes);
 
 /*--------------------- SPREAD operator ----------------------------*/
 
@@ -31,16 +31,16 @@ const real_another_array = another_array.flat(Infinity)
     is there in the original array
 */ 
 
-console.log(real_another_array);
+// console.log(real_another_array);
 
 /*----------------- Other methods of arrays --------------------------------*/
 
-console.log(Array.isArray("Saurabh"))
-console.log(Array.from("Saurabh"))
-console.log(Array.from({name : "Saurabh"}))
+// console.log(Array.isArray("SaurabhTiwari"))
+// console.log(Array.from("SaurabhTiwari"))
+console.log(Array.from({name : "SaurabhTiwari"}))
 
 let score1 = 100
 let score2 = 200
 let score3 = 300
 
-console.log(Array.of(score1,score2,score3))
+// console.log(Array.of(score1,score2,score3))
